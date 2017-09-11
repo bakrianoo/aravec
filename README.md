@@ -40,7 +40,7 @@ one of the models by following these steps:
 import gensim
 
 # load the model
-model = gensim.models.Word2Vec.load('Twittert-CBOW/Twittert-CBOW')
+model = gensim.models.Word2Vec.load('Twittert-CBOW/Twt-CBOW')
 
 
 # python 3.X
