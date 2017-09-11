@@ -5,6 +5,7 @@ AraVec comes in its first version with six different word embeddings models buil
 1. Twitter tweets
 2. World Wide Web pages
 3. Wikipedia Arabic articles
+
 by total tokens of more than 3,300,000,000.
 Word embeddings models became one of the most powerful tools required by many researchers especially the Arabic NLP interesting researchers who are facing
 a high difficulty to reach the sufficient open resources and that what pushes us to work on this project to fill like these gaps. 
@@ -23,3 +24,24 @@ WikiPedia-CBOW          | 1,800,000           | 1,090,082,092 | 300	        | CB
 WikiPedia-SG          | 1,800,000           | 1,090,082,092 | 300	        | Skip-Gram 	        | [Download](https://www.dropbox.com/preview/AraVec/Wiki-SG.zip?role=personal) |
 
 
+## How to use
+These model were built using [gensim](https://radimrehurek.com/gensim/models/word2vec.html) Python library. Here's a simple code for loading and using
+one of the models by following these steps:
+1. Install `gensim` using either `pip` or `conda`
+>> pip install gensim
+>> conda install gensim
+2. extract the compressec model to a directory e.g. `Twittert-CBOW`
+3. run this python code to load the model
+>> `
+import gensim
+model = gensim.models.Word2Vec.load('Twittert-CBOW/Twittert-CBOW')
+
+# find the most similar word to egypt
+most_similar = model.most_similar('مصر')
+for word, score in most_similar:
+	print(word, score)
+	
+# get a word vector
+word_vector = model.wv['مصر']
+
+`
