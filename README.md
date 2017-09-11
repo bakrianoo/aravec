@@ -46,7 +46,7 @@ model = gensim.models.Word2Vec.load('Twittert-CBOW/Twittert-CBOW')
 # python 3.X
 word = 'مصر'
 # python 2.7
-# word = 'مصر.decode('utf8', errors='ignore')
+# word = 'مصر'.decode('utf8', errors='ignore')
 
 # find and print the most similar words to a word
 most_similar = model.most_similar( word )
