@@ -15,6 +15,11 @@ a high difficulty to reach the sufficient open resources and that what pushes us
 ## Download
 Model        	  | Docs No.             | Tokens No.    | Dimension	| Technique 	| Download |
 -----        	  | --------             | ----------    | ---------	| --------- 	| -------- |
-Twt-CBOW          | 66,900,000           | 1,090,082,092 | 300	        | CBOW 	        | [Download](http://github.com) |
+Twittert-CBOW          | 66,900,000           | 1,090,082,092 | 300	        | CBOW 	        | [Download](https://www.dropbox.com/preview/AraVec/Twt-CBOW.zip?role=personal) |
+Twittert-SG          | 66,900,000           | 1,090,082,092 | 300	        | Skip-Gram 	        | [Download](https://www.dropbox.com/preview/AraVec/Twt-SG.zip?role=personal) |
+Web-CBOW         | 132,750,000           | 2,225,317,169 | 300	        | CBOW 	        | [Download](https://www.dropbox.com/preview/AraVec/WWW-CBOW.zip?role=personal) |
+Web-SG          | 132,750,000           | 2,225,317,169 | 300	        | Skip-Gram 	        | [Download](https://www.dropbox.com/preview/AraVec/WWW-SG.zip?role=personal) |
+WikiPedia-CBOW          | 1,800,000           | 1,090,082,092 | 300	        | CBOW 	        | [Download](https://www.dropbox.com/preview/AraVec/Wiki-CBOW.zip?role=personal) |\
+WikiPedia-SG          | 1,800,000           | 1,090,082,092 | 300	        | Skip-Gram 	        | [Download](https://www.dropbox.com/preview/AraVec/Wiki-SG.zip?role=personal) |
 
 
