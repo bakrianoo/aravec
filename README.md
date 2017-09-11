@@ -14,6 +14,7 @@ a high difficulty to reach the sufficient open resources and that what pushes us
 
 ## Download
 Model        	  | Docs No.             | Tokens No.    | Dimension	| Technique 	| Download |
+-----        	  | --------             | ----------    | ---------	| --------- 	| -------- |
 Twt-CBOW          | 66,900,000           | 1,090,082,092 | 300	        | CBOW 	        | [Download](http://github.com) |
 
 
