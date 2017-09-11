@@ -33,19 +33,27 @@ one of the models by following these steps:
 
 >> conda install gensim
 
-2. extract the compressec model to a directory e.g. `Twittert-CBOW`
+2. extract the compresse model files to a directory e.g. `Twittert-CBOW`
 3. run this python code to load the model
 
 ```
 import gensim
+
+# load the model
 model = gensim.models.Word2Vec.load('Twittert-CBOW/Twittert-CBOW')
 
-# find the most similar word to egypt
-most_similar = model.most_similar('مصر')
+
+# python 3.X
+word = 'مصر'
+# python 2.7
+# word = 'مصر.decode('utf8', errors='ignore')
+
+# find and print the most similar words to a word
+most_similar = model.most_similar( word )
 for word, score in most_similar:
 	print(word, score)
 	
 # get a word vector
-word_vector = model.wv['مصر']
+word_vector = model.wv[ word ]
 
 ```
