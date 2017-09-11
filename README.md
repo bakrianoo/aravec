@@ -33,8 +33,8 @@ one of the models by following these steps:
 
 >> conda install gensim
 
-2. extract the compresse model files to a directory e.g. `Twittert-CBOW`
-3. run this python code to load the model
+2. extract the compressed model files to a directory [ e.g. `Twittert-CBOW` ]
+3. run this python code to load and use the model
 
 ```
 import gensim
@@ -44,14 +44,14 @@ model = gensim.models.Word2Vec.load('Twittert-CBOW/Twittert-CBOW')
 
 
 # python 3.X
-word = 'مصر'
+word = u'مصر'
 # python 2.7
 # word = 'مصر'.decode('utf8', errors='ignore')
 
-# find and print the most similar words to a word
-most_similar = model.most_similar( word )
-for word, score in most_similar:
-	print(word, score)
+# find and print the most similar terms to a word
+most_similar = model.wv.most_similar( word )
+for term, score in most_similar:
+	print(term, score)
 	
 # get a word vector
 word_vector = model.wv[ word ]
