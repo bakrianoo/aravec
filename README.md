@@ -16,12 +16,12 @@ a high difficulty to reach the sufficient open resources and that what pushes us
 ## Download
 Model        	  | Docs No.             | Tokens No.    | Dimension	| Technique 	| Download |
 -----        	  | --------             | ----------    | ---------	| --------- 	| -------- |
-Twittert-CBOW          | 66,900,000           | 1,090,082,092 | 300	        | CBOW 	        | [Download](https://www.dropbox.com/preview/AraVec/Twt-CBOW.zip?role=personal) |
-Twittert-SG          | 66,900,000           | 1,090,082,092 | 300	        | Skip-Gram 	        | [Download](https://www.dropbox.com/preview/AraVec/Twt-SG.zip?role=personal) |
-Web-CBOW         | 132,750,000           | 2,225,317,169 | 300	        | CBOW 	        | [Download](https://www.dropbox.com/preview/AraVec/WWW-CBOW.zip?role=personal) |
-Web-SG          | 132,750,000           | 2,225,317,169 | 300	        | Skip-Gram 	        | [Download](https://www.dropbox.com/preview/AraVec/WWW-SG.zip?role=personal) |
-Wikipedia-CBOW          | 1,800,000           | 1,090,082,092 | 300	        | CBOW 	        | [Download](https://www.dropbox.com/preview/AraVec/Wiki-CBOW.zip?role=personal) |\
-Wikipedia-SG          | 1,800,000           | 1,090,082,092 | 300	        | Skip-Gram 	        | [Download](https://www.dropbox.com/preview/AraVec/Wiki-SG.zip?role=personal) |
+Twittert-CBOW          | 66,900,000           | 1,090,082,092 | 300	        | CBOW 	        | [Download](https://www.dropbox.com/s/ce9phmmawoe1ure/Twt-CBOW.zip?dl=0) |
+Twittert-SG          | 66,900,000           | 1,090,082,092 | 300	        | Skip-Gram 	        | [Download](https://www.dropbox.com/s/26mfjdspmz22dqp/Twt-SG.zip?dl=0) |
+Web-CBOW         | 132,750,000           | 2,225,317,169 | 300	        | CBOW 	        | [Download](https://www.dropbox.com/s/3zfjii6ap79hwng/WWW-CBOW.zip?dl=0) |
+Web-SG          | 132,750,000           | 2,225,317,169 | 300	        | Skip-Gram 	        | [Download](https://www.dropbox.com/s/jt42ry9q4vqn4js/WWW-SG.zip?dl=0) |
+Wikipedia-CBOW          | 1,800,000           | 1,090,082,092 | 300	        | CBOW 	        | [Download](https://www.dropbox.com/s/yk1vx8givzk6yvo/Wiki-CBOW.zip?dl=0) |\
+Wikipedia-SG          | 1,800,000           | 1,090,082,092 | 300	        | Skip-Gram 	        | [Download](https://www.dropbox.com/s/xnz5d4oxqsm4wdm/Wiki-SG.zip?dl=0) |
 
 
 ## How to use
