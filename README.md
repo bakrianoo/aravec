@@ -7,8 +7,7 @@ AraVec comes in its first version with six different word embeddings models buil
 3. Wikipedia Arabic articles
 
 By total tokens of more than 3,300,000,000.
-Word embeddings models became one of the most powerful tools required by many researchers especially the Arabic NLP interesting researchers who are facing
-a high difficulty to reach the sufficient open resources and that what pushes us to work on this project to fill like these gaps. 
+
 
 ## Citation
 `CITATION GOES HERE`
@@ -25,7 +24,7 @@ Wikipedia-SG          | 1,800,000           | 1,090,082,092 | 300	        | Skip
 
 
 ## How to use
-These model were built using [gensim](https://radimrehurek.com/gensim/models/word2vec.html) Python library. Here's a simple code for loading and using
+These models were built using [gensim](https://radimrehurek.com/gensim/models/word2vec.html) Python library. Here's a simple code for loading and using
 one of the models by following these steps:
 1. Install `gensim` using either `pip` or `conda`
 
