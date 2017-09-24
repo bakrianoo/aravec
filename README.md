@@ -71,7 +71,7 @@ def clean_str(text):
 # python 3.X
 word = clean_str(u'القاهرة')
 # python 2.7
-# word = clean_str()'مصر'.decode('utf8', errors='ignore'))
+# word = clean_str('القاهرة'.decode('utf8', errors='ignore'))
 
 # find and print the most similar terms to a word
 most_similar = model.wv.most_similar( word )
