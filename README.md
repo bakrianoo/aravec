@@ -1,16 +1,25 @@
 ## AraVec
-AraVec is a pre-trained distributed word representation (word embedding) open source project which comes to enhance the Arabic NLP research
-community with free to use and powerful word embeddings models built with one of the most popular word embedding techniques, Word2Vec.
+Advancements in neural networks have led to developments in fields like computer vision, speech recognition and natural
+language processing (NLP). One of the most influential recent developments in NLP is the use of word embeddings, where
+words are represented as vectors in a continuous space, capturing many syntactic and semantic relations among them.
+
+AraVec is a pre-trained distributed word representation (word embedding) open source project which aims to provide the Arabic NLP
+research community with free to use and powerful word embedding models. The first version of AraVec provides six different
+word embedding models built on top of three different Arabic content domains; Tweets, World Wide Web pages and Wikipedia
+Arabic articles. The total number of tokens used to build the models amounts to more than 3,300,000,000. This paper describes
+the resources used for building the models, the employed data cleaning techniques, the carried out preprocessing step, as well as
+the details of the employed word embedding creation techniques.
+
 AraVec comes in its first version with six different word embeddings models built on top of three different Arabic content domains;
 1. Twitter tweets
 2. World Wide Web pages
 3. Wikipedia Arabic articles
 
-By total tokens of more than 3,300,000,000.
+By total tokens of more than 3,300,000,000 tokens.
 
 
 ## Citation
-`CITATION GOES HERE`
+`Abu Bakr Soliman, Kareem Eisa, and Samhaa R. El-Beltagy, “AraVec: A set of Arabic Word Embedding Models for use in Arabic NLP”, in proceedings of the 3rd International Conference on Arabic Computational Linguistics (ACLing 2017), Dubai, UAE, 2017.`
 
 ## Download
 Model        	  | Docs No.             | Tokens No.    | Dimension	| Technique 	| Download |
@@ -36,6 +45,7 @@ one of the models by following these steps:
 3. run this python code to load and use the model
 
 ```
+# -*- coding: utf8 -*-
 import gensim
 import re
 
@@ -84,4 +94,4 @@ word_vector = model.wv[ word ]
 ```
 
 ## Citation
-`CITATION GOES HERE`
+`Abu Bakr Soliman, Kareem Eisa, and Samhaa R. El-Beltagy, “AraVec: A set of Arabic Word Embedding Models for use in Arabic NLP”, in proceedings of the 3rd International Conference on Arabic Computational Linguistics (ACLing 2017), Dubai, UAE, 2017.`
