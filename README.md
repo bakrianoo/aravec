@@ -21,6 +21,8 @@ By total tokens of more than 3,300,000,000 tokens.
 ## Citation
 `Abu Bakr Soliman, Kareem Eisa, and Samhaa R. El-Beltagy, “AraVec: A set of Arabic Word Embedding Models for use in Arabic NLP”, in proceedings of the 3rd International Conference on Arabic Computational Linguistics (ACLing 2017), Dubai, UAE, 2017.`
 
+## [Read the Full-Text Paper](https://www.researchgate.net/publication/319880027_AraVec_A_set_of_Arabic_Word_Embedding_Models_for_use_in_Arabic_NLP)
+
 ## Download
 Model        	  | Docs No.             | Tokens No.    | Dimension	| Technique 	| Download |	Mirror-1 |
 -----        	  | --------             | ----------    | ---------	| --------- 	| -------- |	-------- |
