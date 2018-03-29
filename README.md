@@ -10,7 +10,8 @@ Arabic articles. The total number of tokens used to build the models amounts to 
 the resources used for building the models, the employed data cleaning techniques, the carried out preprocessing step, as well as
 the details of the employed word embedding creation techniques.
 
-AraVec comes in its first version with six different word embeddings models built on top of three different Arabic content domains;
+The second version of AraVec provides twelve different word embedding models built on top of three different Arabic content domains; Tweets, World Wide Web pages and Wikipedia Arabic articles. The difference between this version and the first, is that the hyper-parameter for minimum count was reduced to 50 instead of 500 for Tweets dataset, 200 for World Wide Web pages dataset and 5 for Wikipedia articels dataset. This resulted in models that have more coverage in terms of vocabulary.  The other change, is the we produced a set of six  embedding models  that have a dimension  of 100.
+
 1. Twitter tweets
 2. World Wide Web pages
 3. Wikipedia Arabic articles
