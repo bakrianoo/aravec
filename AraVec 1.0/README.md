@@ -1,4 +1,4 @@
-## AraVec 2.0
+## AraVec 1.0
 Advancements in neural networks have led to developments in fields like computer vision, speech recognition and natural
 language processing (NLP). One of the most influential recent developments in NLP is the use of word embeddings, where
 words are represented as vectors in a continuous space, capturing many syntactic and semantic relations among them.
@@ -24,21 +24,14 @@ By total tokens of more than 3,300,000,000 tokens.
 ## [Read the Full-Text Paper](https://www.researchgate.net/publication/319880027_AraVec_A_set_of_Arabic_Word_Embedding_Models_for_use_in_Arabic_NLP)
 
 ## Download
-Model        	  | Docs No.             | Vocabularies No.    | Dimension		| Download |	Mirror-1 |
+Model        	  | Docs No.             | Vocabularies No.    | Dimension	| Technique 	| Download |	Mirror-1 |
 -----        	  | --------             | ----------    | ---------	| --------- 	| -------- |	-------- |
-Twitter-CBOW          | 66,900,000           | 331,679 | **300**	        | [Download](https://archive.org/download/aravec2.0/tweet_cbow_300.zip) |	[Download](https://mega.nz/#!WeQE0RJA!uKUhthqnuvK-ZnAQM03aJMlxC6PAL_aCCeArCMAv74s) |
-Twitter-Skipgram          | 66,900,000           | 331,679 | **300**	        | [Download](https://archive.org/download/aravec2.0/tweets_sg_300.zip) |	[Download](https://mega.nz/#!iHxwhTiI!BYdyAlQ3PwpyPOgXlFm1X0kyHFk-ZqgGYrlTnhR7D4Y) |
-Twitter-CBOW          | 66,900,000           | 331,679 | **100**	        | [Download](https://archive.org/download/aravec2.0/tweet_cbow_100.zip) |	[Download](https://mega.nz/#!jaonmTLJ!0VYC7tmxqNLADkUR12UC5eZgfkgLb68L29beB9hPWPA) |
-Twitter-Skipgram           | 66,900,000           | 331,679 | **100**	        | [Download](https://archive.org/download/aravec2.0/tweets_sg_100.zip) |	[Download](https://mega.nz/#!SCoUwbZY!XtvUrUzSrme6tEhjhTzj2vy4V3s-QWu0sm4z-444NtE) |
-Wikipedia-CBOW          | 1,800,000           | 162,516 | **300**	        | [Download](https://archive.org/download/aravec2.0/wiki_cbow_300.zip) |	[Download](https://mega.nz/#!7CZSjYoC!-7xcdzLTanz84ut0Rr8v3Gyx7oMbvKiyLQ5JlkEKgak) |
-Wikipedia-Skipgram          | 1,800,000           | 162,516 | **300**	        | [Download](https://archive.org/download/aravec2.0/wiki_sg_300.zip) |	[Download](https://mega.nz/#!aShj0JoK!b8syMc7cN4rowrmZteJhDSbnO51ebF2zLZDRdiFrK3w) |
-Wikipedia-CBOW          | 1,800,000           | 162,516 | **100**	        | [Download](https://archive.org/download/aravec2.0/wiki_cbow_100.zip) |	[Download](https://mega.nz/#!mOZxiIJR!Sc9SDB3Ega73ourb1YQwC9W9ypMt_sL7dZ5ghFMdrik) |
-Wikipedia-Skipgram          | 1,800,000           | 162,516 | **100**	        | [Download](https://archive.org/download/aravec2.0/wiki_sg_100.zip) |	[Download](https://mega.nz/#!ufB0XKjA!WgQprLwZ-K3lHe6HIwcFv6lLA106pxGsMl6ykMaNKQI) |
-Web-CBOW          | 132,750,000           | 234,961 | **300**	        | [Download](https://archive.org/download/aravec2.0/www_cbow_300.zip) |	[Download](https://mega.nz/#!7a4jDYLA!8zeNo051VMmy6ersbyj_LKzjJbXMWH_7VXFvtFUf_34) |
-Web-Skipgram          | 132,750,000           | 234,961 | **300**	        | [Download](https://archive.org/download/aravec2.0/www_sg_300.zip) |	[Download](https://mega.nz/#!qKQV0TSB!K1YwoPcMKDciGtXE9bTVsPCxD287F3HinwKSnOzDs9E) |
-Web-CBOW          | 132,750,000           | 234,961 | **100**	        | [Download](https://archive.org/download/aravec2.0/www_cbow_100.zip) |	[Download](https://mega.nz/#!CSxBhbwC!u48wl0afugBWSuVAebsIAI5ZAjjTzzF9ivAAxuVfA2I) |
-Web-Skipgram          | 132,750,000           | 234,961 | **100**	        | [Download](https://archive.org/download/aravec2.0/www_sg_100.zip) |	[Download](https://mega.nz/#!PCJDTYQR!jQbf1k8soulRD1mdEziXSDr0wwFUHOJEmzzaV4uwD5g) |
-
+Twittert-CBOW          | 66,900,000           | 204,448 | 300	        | CBOW 	        | [Download](https://www.dropbox.com/s/ce9phmmawoe1ure/Twt-CBOW.zip?dl=0) |	[Download](https://archive.org/download/AraVec/Twt-CBOW.zip) |
+Twittert-SG          | 66,900,000           | 204,448 | 300	        | Skip-Gram 	        | [Download](https://www.dropbox.com/s/26mfjdspmz22dqp/Twt-SG.zip?dl=0) |	[Download](https://archive.org/download/AraVec/Twt-SG.zip) |
+Web-CBOW         | 132,750,000           | 146,237 | 300	        | CBOW 	        | [Download](https://www.dropbox.com/s/3zfjii6ap79hwng/WWW-CBOW.zip?dl=0) |	[Download](https://archive.org/download/AraVec/WWW-CBOW.zip) |
+Web-SG          | 132,750,000           | 146,237 | 300	        | Skip-Gram 	        | [Download](https://www.dropbox.com/s/jt42ry9q4vqn4js/WWW-SG.zip?dl=0) |	[Download](https://archive.org/download/AraVec/WWW-SG.zip) |
+Wikipedia-CBOW          | 1,800,000           | 140,319 | 300	        | CBOW 	        | [Download](https://www.dropbox.com/s/yk1vx8givzk6yvo/Wiki-CBOW.zip?dl=0) |	[Download](https://archive.org/download/AraVec/Wiki-CBOW.zip) |
+Wikipedia-SG          | 1,800,000           | 140,319 | 300	        | Skip-Gram 	        | [Download](https://www.dropbox.com/s/xnz5d4oxqsm4wdm/Wiki-SG.zip?dl=0) |	[Download](https://archive.org/download/AraVec/Wiki-SG.zip) |
 
 
 ## How to use
@@ -60,7 +53,7 @@ import gensim
 import re
 
 # load the model
-model = gensim.models.Word2Vec.load('Twittert-CBOW/tweets_cbow_300')
+model = gensim.models.Word2Vec.load('Twt-CBOW')
 
 # Clean/Normalize Arabic Text
 def clean_str(text):
