@@ -24,8 +24,8 @@ By total tokens of more than 3,300,000,000 tokens.
 ## [Read the Full-Text Paper](https://www.researchgate.net/publication/319880027_AraVec_A_set_of_Arabic_Word_Embedding_Models_for_use_in_Arabic_NLP)
 
 ## Download
-Model        	  | Docs No.             | Vocabularies No.    | Dimension		| Download |	Mirror-1 |
------        	  | --------             | ----------    | ---------	| --------- 	| -------- |	-------- |
+Model        	  | Docs No.             | Vocabularies No.    | Dimension		| Download      |   Mirror-1 |
+-----        	  | --------             | ----------          | ---------	    | --------- 	| --------   |
 Twitter-CBOW          | 66,900,000           | 331,679 | **300**	        | [Download](https://archive.org/download/aravec2.0/tweet_cbow_300.zip) |	[Download](https://mega.nz/#!WeQE0RJA!uKUhthqnuvK-ZnAQM03aJMlxC6PAL_aCCeArCMAv74s) |
 Twitter-Skipgram          | 66,900,000           | 331,679 | **300**	        | [Download](https://archive.org/download/aravec2.0/tweets_sg_300.zip) |	[Download](https://mega.nz/#!iHxwhTiI!BYdyAlQ3PwpyPOgXlFm1X0kyHFk-ZqgGYrlTnhR7D4Y) |
 Twitter-CBOW          | 66,900,000           | 331,679 | **100**	        | [Download](https://archive.org/download/aravec2.0/tweet_cbow_100.zip) |	[Download](https://mega.nz/#!jaonmTLJ!0VYC7tmxqNLADkUR12UC5eZgfkgLb68L29beB9hPWPA) |
