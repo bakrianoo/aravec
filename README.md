@@ -45,7 +45,7 @@ Web-Skipgram          | 132,750,000           | 234,961 | **100**	        | [Dow
 ## How to use
 These models were built using [gensim](https://radimrehurek.com/gensim/models/word2vec.html) Python library. Here's a simple code for loading and using
 one of the models by following these steps:
-1. Install `gensim` using either `pip` or `conda`
+1. Install `gensim` >= 3.4 using either `pip` or `conda`
 
 >> pip install gensim
 
