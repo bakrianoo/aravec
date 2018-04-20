@@ -55,6 +55,8 @@ one of the models by following these steps:
 3. keep the **.npy** files. You are gonna to load the file with no extension, like what you'll see in the following code.
 4. run this python code to load and use the model
 
+![alt text](https://raw.githubusercontent.com/bakrianoo/aravec/master/how.jpg)
+
 ```
 # -*- coding: utf8 -*-
 import gensim
