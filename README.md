@@ -33,15 +33,22 @@ By total tokens of more than 1,169,075,128 tokens.
 Let's take a look on what we can retieve from the n-grams models using some most similar queries. 
 
 ![alt text](https://raw.githubusercontent.com/bakrianoo/aravec/master/assets/query-1.jpg)
+***
 ![alt text](https://raw.githubusercontent.com/bakrianoo/aravec/master/assets/query-2.jpg)
+***
 ![alt text](https://raw.githubusercontent.com/bakrianoo/aravec/master/assets/query-3.jpg)
+***
 ![alt text](https://raw.githubusercontent.com/bakrianoo/aravec/master/assets/query-4.jpg)
+***
 ![alt text](https://raw.githubusercontent.com/bakrianoo/aravec/master/assets/query-5.jpg)
+***
 ![alt text](https://raw.githubusercontent.com/bakrianoo/aravec/master/assets/query-6.jpg)
-
 ***
 
-Model        	  | Docs No.             | Vocabularies No.    | Dimension		| Download      |
+***
+### N-Grams Models
+
+Model        	  | Docs No.             | Vocabularies No.    | Vec-Size		| Download      |
 -----        	  | --------             | ----------          | ---------	    | --------- 	|
 Twitter-CBOW          | 66,900,000           | 1,476,715 | **300**	        | [Download](https://archive.org/download/full_grams_cbow_300_twitter/full_grams_cbow_300_twitter.zip) |
 Twitter-CBOW          | 66,900,000           | 1,476,715 | **100**	        | [Download](https://archive.org/download/full_grams_cbow_300_twitter/full_grams_cbow_100_twitter.zip) |
@@ -58,7 +65,7 @@ Wikipedia-SkipGram          | 1,800,000           | 662,109 | **100**	        | 
 
 ### Unigrams Models
 
-Model        	  | Docs No.             | Vocabularies No.    | Dimension		| Download      |
+Model        	  | Docs No.             | Vocabularies No.    | Vec-Size		| Download      |
 -----        	  | --------             | ----------          | ---------	    | --------- 	|
 Twitter-CBOW          | 66,900,000           | 1,259,756 | **300**	        | [Download](https://archive.org/download/full_grams_cbow_300_twitter/full_uni_cbow_300_twitter.zip) |
 Twitter-CBOW          | 66,900,000           | 1,259,756 | **100**	        | [Download](https://archive.org/download/full_grams_cbow_300_twitter/full_uni_cbow_100_twitter.zip) |
@@ -76,7 +83,7 @@ Wikipedia-SkipGram          | 1,800,000           | 320,636 | **100**	        | 
 ## How to use
 These models were built using [gensim](https://radimrehurek.com/gensim/models/word2vec.html) Python library. Here's a simple code for loading and using
 one of the models by following these steps:
-1. Install `gensim` >= **3.4** and nltk using either `pip` or `conda`
+1. Install `gensim` >= **3.4** and nltk >= **3.2** using either `pip` or `conda`
 
 >> pip install gensim nltk
 
