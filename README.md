@@ -1,22 +1,21 @@
-## AraVec 2.0
+## AraVec 3.0
 Advancements in neural networks have led to developments in fields like computer vision, speech recognition and natural
 language processing (NLP). One of the most influential recent developments in NLP is the use of word embeddings, where
 words are represented as vectors in a continuous space, capturing many syntactic and semantic relations among them.
 
 AraVec is a pre-trained distributed word representation (word embedding) open source project which aims to provide the Arabic NLP
 research community with free to use and powerful word embedding models. The first version of AraVec provides six different
-word embedding models built on top of three different Arabic content domains; Tweets, World Wide Web pages and Wikipedia
-Arabic articles. The total number of tokens used to build the models amounts to more than 3,300,000,000. This paper describes
+word embedding models built on top of three different Arabic content domains; Tweets and Wikipedia
+This paper describes
 the resources used for building the models, the employed data cleaning techniques, the carried out preprocessing step, as well as
 the details of the employed word embedding creation techniques.
 
-The second version of AraVec provides twelve different word embedding models built on top of three different Arabic content domains; Tweets, World Wide Web pages and Wikipedia Arabic articles. The difference between this version and the first, is that the hyper-parameter for minimum count was reduced to 50 instead of 500 for Tweets dataset, 200 for World Wide Web pages dataset and 5 for Wikipedia articels dataset. This resulted in models that have more coverage in terms of vocabulary.  The other change, is the we produced a set of six  embedding models  that have a dimension  of 100.
+The third version of AraVec provides 16 different word embedding models built on top of two different Arabic content domains; Tweets and Wikipedia Arabic articles. The major difference between this version and the previous ones, is that the we produced two different types of models, unigrams and n-grams models. We utilized set of statistical techniques to genrate the most common used n-grams of each data domain.
 
 1. Twitter tweets
-2. World Wide Web pages
-3. Wikipedia Arabic articles
+2. Wikipedia Arabic articles
 
-By total tokens of more than 3,300,000,000 tokens.
+By total tokens of more than 1,169,075,128 tokens.
 
 
 ## Citation
@@ -24,46 +23,83 @@ By total tokens of more than 3,300,000,000 tokens.
 
 ## [Read the Full-Text Paper](https://www.researchgate.net/publication/319880027_AraVec_A_set_of_Arabic_Word_Embedding_Models_for_use_in_Arabic_NLP)
 
-## Download
-Model        	  | Docs No.             | Vocabularies No.    | Dimension		| Download      |   Mirror-1 |
------        	  | --------             | ----------          | ---------	    | --------- 	| --------   |
-Twitter-CBOW          | 66,900,000           | 331,679 | **300**	        | [Download](https://archive.org/download/aravec2.0/tweet_cbow_300.zip) |	[Download](https://mega.nz/#!WeQE0RJA!uKUhthqnuvK-ZnAQM03aJMlxC6PAL_aCCeArCMAv74s) |
-Twitter-Skipgram          | 66,900,000           | 331,679 | **300**	        | [Download](https://archive.org/download/aravec2.0/tweets_sg_300.zip) |	[Download](https://mega.nz/#!iHxwhTiI!BYdyAlQ3PwpyPOgXlFm1X0kyHFk-ZqgGYrlTnhR7D4Y) |
-Twitter-CBOW          | 66,900,000           | 331,679 | **100**	        | [Download](https://archive.org/download/aravec2.0/tweet_cbow_100.zip) |	[Download](https://mega.nz/#!jaonmTLJ!0VYC7tmxqNLADkUR12UC5eZgfkgLb68L29beB9hPWPA) |
-Twitter-Skipgram           | 66,900,000           | 331,679 | **100**	        | [Download](https://archive.org/download/aravec2.0/tweets_sg_100.zip) |	[Download](https://mega.nz/#!SCoUwbZY!XtvUrUzSrme6tEhjhTzj2vy4V3s-QWu0sm4z-444NtE) |
-Wikipedia-CBOW          | 1,800,000           | 162,516 | **300**	        | [Download](https://archive.org/download/aravec2.0/wiki_cbow_300.zip) |	[Download](https://mega.nz/#!7CZSjYoC!-7xcdzLTanz84ut0Rr8v3Gyx7oMbvKiyLQ5JlkEKgak) |
-Wikipedia-Skipgram          | 1,800,000           | 162,516 | **300**	        | [Download](https://archive.org/download/aravec2.0/wiki_sg_300.zip) |	[Download](https://mega.nz/#!aShj0JoK!b8syMc7cN4rowrmZteJhDSbnO51ebF2zLZDRdiFrK3w) |
-Wikipedia-CBOW          | 1,800,000           | 162,516 | **100**	        | [Download](https://archive.org/download/aravec2.0/wiki_cbow_100.zip) |	[Download](https://mega.nz/#!mOZxiIJR!Sc9SDB3Ega73ourb1YQwC9W9ypMt_sL7dZ5ghFMdrik) |
-Wikipedia-Skipgram          | 1,800,000           | 162,516 | **100**	        | [Download](https://archive.org/download/aravec2.0/wiki_sg_100.zip) |	[Download](https://mega.nz/#!ufB0XKjA!WgQprLwZ-K3lHe6HIwcFv6lLA106pxGsMl6ykMaNKQI) |
-Web-CBOW          | 132,750,000           | 234,961 | **300**	        | [Download](https://archive.org/download/aravec2.0/www_cbow_300.zip) |	[Download](https://mega.nz/#!7a4jDYLA!8zeNo051VMmy6ersbyj_LKzjJbXMWH_7VXFvtFUf_34) |
-Web-Skipgram          | 132,750,000           | 234,961 | **300**	        | [Download](https://archive.org/download/aravec2.0/www_sg_300.zip) |	[Download](https://mega.nz/#!qKQV0TSB!K1YwoPcMKDciGtXE9bTVsPCxD287F3HinwKSnOzDs9E) |
-Web-CBOW          | 132,750,000           | 234,961 | **100**	        | [Download](https://archive.org/download/aravec2.0/www_cbow_100.zip) |	[Download](https://mega.nz/#!CSxBhbwC!u48wl0afugBWSuVAebsIAI5ZAjjTzzF9ivAAxuVfA2I) |
-Web-Skipgram          | 132,750,000           | 234,961 | **100**	        | [Download](https://archive.org/download/aravec2.0/www_sg_100.zip) |	[Download](https://mega.nz/#!PCJDTYQR!jQbf1k8soulRD1mdEziXSDr0wwFUHOJEmzzaV4uwD5g) |
+***
+***
 
+## Download
+
+### N-Grams Models
+
+Let's take a look on what we can retieve from the n-grams models using some most similar queries. 
+
+![alt text](https://raw.githubusercontent.com/bakrianoo/aravec/master/assets/query-1.jpg)
+![alt text](https://raw.githubusercontent.com/bakrianoo/aravec/master/assets/query-2.jpg)
+![alt text](https://raw.githubusercontent.com/bakrianoo/aravec/master/assets/query-3.jpg)
+![alt text](https://raw.githubusercontent.com/bakrianoo/aravec/master/assets/query-4.jpg)
+![alt text](https://raw.githubusercontent.com/bakrianoo/aravec/master/assets/query-5.jpg)
+![alt text](https://raw.githubusercontent.com/bakrianoo/aravec/master/assets/query-6.jpg)
+
+***
+
+Model        	  | Docs No.             | Vocabularies No.    | Dimension		| Download      |
+-----        	  | --------             | ----------          | ---------	    | --------- 	|
+Twitter-CBOW          | 66,900,000           | 1,476,715 | **300**	        | [Download](https://archive.org/download/full_grams_cbow_300_twitter/full_grams_cbow_300_twitter.zip) |
+Twitter-CBOW          | 66,900,000           | 1,476,715 | **100**	        | [Download](https://archive.org/download/full_grams_cbow_300_twitter/full_grams_cbow_100_twitter.zip) |
+Twitter-SkipGram          | 66,900,000           | 1,476,715 | **300**	        | [Download](https://archive.org/download/full_grams_cbow_300_twitter/full_grams_sg_300_twitter.zip) |
+Twitter-SkipGram          | 66,900,000           | 1,476,715 | **100**	        | [Download](https://archive.org/download/full_grams_cbow_300_twitter/full_grams_sg_100_twitter.zip) |
+Wikipedia-CBOW          | 1,800,000           | 662,109 | **300**	        | [Download](https://archive.org/download/aravec_3_wiki/full_grams_cbow_300_wiki.zip) |
+Wikipedia-CBOW          | 1,800,000           | 662,109 | **100**	        | [Download](https://archive.org/download/aravec_3_wiki/full_grams_cbow_100_wiki.zip) |
+Wikipedia-SkipGram          | 1,800,000           | 662,109 | **300**	        | [Download](https://archive.org/download/aravec_3_wiki/full_grams_sg_300_wiki.zip) |
+Wikipedia-SkipGram          | 1,800,000           | 662,109 | **100**	        | [Download](https://archive.org/download/aravec_3_wiki/full_grams_sg_100_wiki.zip) |
+
+***
+***
+
+
+### Unigrams Models
+
+Model        	  | Docs No.             | Vocabularies No.    | Dimension		| Download      |
+-----        	  | --------             | ----------          | ---------	    | --------- 	|
+Twitter-CBOW          | 66,900,000           | 1,259,756 | **300**	        | [Download](https://archive.org/download/full_grams_cbow_300_twitter/full_uni_cbow_300_twitter.zip) |
+Twitter-CBOW          | 66,900,000           | 1,259,756 | **100**	        | [Download](https://archive.org/download/full_grams_cbow_300_twitter/full_uni_cbow_100_twitter.zip) |
+Twitter-SkipGram          | 66,900,000           | 1,259,756 | **300**	        | [Download](https://archive.org/download/full_grams_cbow_300_twitter/full_uni_sg_300_twitter.zip) |
+Twitter-SkipGram          | 66,900,000           | 1,259,756 | **100**	        | [Download](https://archive.org/download/full_grams_cbow_300_twitter/full_uni_sg_100_twitter.zip) |
+Wikipedia-CBOW          | 1,800,000           | 320,636 | **300**	        | [Download](https://archive.org/download/aravec_3_wiki/full_uni_cbow_300_wiki.zip) |
+Wikipedia-CBOW          | 1,800,000           | 320,636 | **100**	        | [Download](https://archive.org/download/aravec_3_wiki/full_uni_cbow_100_wiki.zip) |
+Wikipedia-SkipGram          | 1,800,000           | 320,636 | **300**	        | [Download](https://archive.org/download/aravec_3_wiki/full_uni_sg_300_wiki.zip) |
+Wikipedia-SkipGram          | 1,800,000           | 320,636 | **100**	        | [Download](https://archive.org/download/aravec_3_wiki/full_uni_sg_100_wiki.zip) |
+
+***
+***
 
 
 ## How to use
 These models were built using [gensim](https://radimrehurek.com/gensim/models/word2vec.html) Python library. Here's a simple code for loading and using
 one of the models by following these steps:
-1. Install `gensim` >= 3.4 using either `pip` or `conda`
+1. Install `gensim` >= **3.4** and nltk using either `pip` or `conda`
 
->> pip install gensim
+>> pip install gensim nltk
 
->> conda install gensim
+>> conda install gensim nltk
 
 2. extract the compressed model files to a directory [ e.g. `Twittert-CBOW` ]
 3. keep the **.npy** files. You are gonna to load the file with no extension, like what you'll see in the following code.
 4. run this python code to load and use the model
 
-![alt text](https://raw.githubusercontent.com/bakrianoo/aravec/master/how.jpg)
+![alt text](https://raw.githubusercontent.com/bakrianoo/aravec/master/assets/how.jpg)
 
-```
+## Code Samples
+
+```python
+
 # -*- coding: utf8 -*-
 import gensim
 import re
+import numpy as np
+from nltk import ngrams
 
-# load the model
-model = gensim.models.Word2Vec.load('Twittert-CBOW/tweets_cbow_300')
+# =========================
+# ==== Helper Methods =====
 
 # Clean/Normalize Arabic Text
 def clean_str(text):
@@ -91,18 +127,128 @@ def clean_str(text):
 
     return text
 
-# python 3.X
-word = clean_str(u'القاهرة')
-# python 2.7
-# word = clean_str('القاهرة'.decode('utf8', errors='ignore'))
+def get_vec(n_model,dim, token):
+    vec = np.zeros(dim)
+    is_vec = False
+    if token not in n_model.wv:
+        _count = 0
+        is_vec = True
+        for w in token.split("_"):
+            if w in n_model.wv:
+                _count += 1
+                vec += n_model.wv[w]
+        if _count > 0:
+            vec = vec / _count
+    else:
+        vec = n_model.wv[token]
+    return vec
 
-# find and print the most similar terms to a word
-most_similar = model.wv.most_similar( word )
+def calc_vec(pos_tokens, neg_tokens, n_model, dim):
+    vec = np.zeros(dim)
+    for p in pos_tokens:
+        vec += get_vec(n_model,dim,p)
+    for n in neg_tokens:
+        vec -= get_vec(n_model,dim,n)
+    
+    return vec   
+
+## -- Retrieve all ngrams for a text in between a specific range
+def get_all_ngrams(text, nrange=3):
+    text = re.sub(r'[\,\.\;\(\)\[\]\_\+\#\@\!\?\؟\^]', ' ', text)
+    tokens = [token for token in text.split(" ") if token.strip() != ""]
+    ngs = []
+    for n in range(2,nrange+1):
+        ngs += [ng for ng in ngrams(tokens, n)]
+    return ["_".join(ng) for ng in ngs if len(ng)>0 ]
+
+## -- Retrieve all ngrams for a text in a specific n
+def get_ngrams(text, n=2):
+    text = re.sub(r'[\,\.\;\(\)\[\]\_\+\#\@\!\?\؟\^]', ' ', text)
+    tokens = [token for token in text.split(" ") if token.strip() != ""]
+    ngs = [ng for ng in ngrams(tokens, n)]
+    return ["_".join(ng) for ng in ngs if len(ng)>0 ]
+
+## -- filter the existed tokens in a specific model
+def get_existed_tokens(tokens, n_model):
+    return [tok for tok in tokens if tok in n_model.wv ]
+
+
+
+
+
+# ============================   
+# ====== N-Grams Models ======
+
+t_model = gensim.models.Word2Vec.load('models/full_grams_cbow_100_twitter.mdl')
+
+# python 3.X
+token = clean_str(u'ابو تريكه').replace(" ", "_")
+# python 2.7
+# token = clean_str(u'ابو تريكه'.decode('utf8', errors='ignore')).replace(" ", "_")
+
+if token in t_model.wv:
+    most_similar = t_model.wv.most_similar( token, topn=10 )
+    for term, score in most_similar:
+        term = clean_str(term).replace(" ", "_")
+        if term != token:
+            print(term, score)
+
+# تريكه 0.752911388874054
+# حسام_غالي 0.7516342401504517
+# وائل_جمعه 0.7244222164154053
+# وليد_سليمان 0.7177559733390808
+# ...
+
+# =========================================
+# == Get the most similar tokens to a compound query
+# most similar to 
+# عمرو دياب + الخليج - مصر
+
+pos_tokens=[ clean_str(t.strip()).replace(" ", "_") for t in ['عمرو دياب', 'الخليج'] if t.strip() != ""]
+neg_tokens=[ clean_str(t.strip()).replace(" ", "_") for t in ['مصر'] if t.strip() != ""]
+
+vec = calc_vec(pos_tokens=pos_tokens, neg_tokens=neg_tokens, n_model=t_model, dim=t_model.vector_size)
+
+most_sims = t_model.wv.similar_by_vector(vec, topn=10)
+for term, score in most_sims:
+    if term not in pos_tokens+neg_tokens:
+        print(term, score)
+
+# راشد_الماجد 0.7094649076461792
+# ماجد_المهندس 0.6979793906211853
+# عبدالله_رويشد 0.6942606568336487
+# ...
+
+# ====================
+# ====================
+
+
+
+
+# ============================== 
+# ====== Uni-Grams Models ======
+
+t_model = gensim.models.Word2Vec.load('models/full_uni_cbow_100_twitter.mdl')
+
+# python 3.X
+token = clean_str(u'تونس')
+# python 2.7
+# token = clean_str('تونس'.decode('utf8', errors='ignore'))
+
+most_similar = t_model.wv.most_similar( token, topn=10 )
 for term, score in most_similar:
-	print(term, score)
-	
+    print(term, score)
+
+# ليبيا 0.8864325284957886
+# الجزائر 0.8783721327781677
+# السودان 0.8573237061500549
+# مصر 0.8277812600135803
+# ...
+
+
+
 # get a word vector
-word_vector = model.wv[ word ]
+word_vector = t_model.wv[ token ]
 
 ```
 
