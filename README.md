@@ -48,9 +48,7 @@ token = clean_str(u'ابو تريكه').replace(" ", "_")
 if token in t_model.wv:
     most_similar = t_model.wv.most_similar( token, topn=10 )
     for term, score in most_similar:
-        term = clean_str(term).replace(" ", "_")
-        if term != token:
-            print(term, score)
+        print(term, score)
 # OUTPUTs
 # تريكه 0.752911388874054
 # حسام_غالي 0.7516342401504517
