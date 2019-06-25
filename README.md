@@ -26,6 +26,40 @@ By total tokens of more than 1,169,075,128 tokens.
 ***
 ***
 
+## Rapid Example
+
+1. Install gensim >= 3.4 and nltk >= 3.2 using either pip or conda
+2. extract the compressed model files [ e.g. Twittert-CBOW ] to a directory called `models`
+
+```python
+import gensim
+
+# Unigrams models
+t_model = gensim.models.Word2Vec.load('models/full_uni_cbow_100_twitter.mdl')
+word_vector = t_model.wv[ 'تونس' ]
+
+# Ngrams models [when you have a multiple words token]
+t_model = gensim.models.Word2Vec.load('models/full_grams_cbow_100_twitter.mdl')
+word_vector = t_model.wv[ 'السلام عليكم'.replace(' ','_') ] # you need to replace spaces with _ character
+
+# find most similar tokens
+token = clean_str(u'ابو تريكه').replace(" ", "_")
+
+if token in t_model.wv:
+    most_similar = t_model.wv.most_similar( token, topn=10 )
+    for term, score in most_similar:
+        term = clean_str(term).replace(" ", "_")
+        if term != token:
+            print(term, score)
+# OUTPUTs
+# تريكه 0.752911388874054
+# حسام_غالي 0.7516342401504517
+
+```
+
+For more detailed answer included the used clean function which required to preprocess the query tokens. Please go to the detiled answer [Here](https://github.com/bakrianoo/aravec#Code-Samples).
+
+
 ## Download
 
 ### N-Grams Models
