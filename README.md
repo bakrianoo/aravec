@@ -43,7 +43,7 @@ t_model = gensim.models.Word2Vec.load('models/full_grams_cbow_100_twitter.mdl')
 word_vector = t_model.wv[ 'السلام عليكم'.replace(' ','_') ] # you need to replace spaces with _ character
 
 # find most similar tokens
-token = clean_str(u'ابو تريكه').replace(" ", "_")
+token = 'ابو تريكه'.replace(' ','_')
 
 if token in t_model.wv:
     most_similar = t_model.wv.most_similar( token, topn=10 )
@@ -55,7 +55,7 @@ if token in t_model.wv:
 
 ```
 
-For more detailed answer included the used clean function which required to preprocess the query tokens. Please go to the detiled answer [Here](https://github.com/bakrianoo/aravec#Code-Samples).
+For more detailed demo including the required clean function to preprocess the query tokens. Please go to the detiled answer [Here](https://github.com/bakrianoo/aravec#How-To-Use).
 
 
 ## Download
@@ -112,7 +112,7 @@ Wikipedia-SkipGram          | 1,800,000           | 320,636 | **100**	        | 
 ***
 
 
-## How to use
+## How To Use
 These models were built using [gensim](https://radimrehurek.com/gensim/models/word2vec.html) Python library. Here's a simple code for loading and using
 one of the models by following these steps:
 1. Install `gensim` >= **3.4** and nltk >= **3.2** using either `pip` or `conda`
