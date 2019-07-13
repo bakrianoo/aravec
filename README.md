@@ -15,7 +15,14 @@ The third version of AraVec provides 16 different word embedding models built on
 1. Twitter tweets
 2. Wikipedia Arabic articles
 
-By total tokens of more than 1,169,075,128 tokens.
+By total tokens of more than `1,169,075,128` tokens.
+
+Take a look on how ngrams models are represented:
+
+![alt text](https://raw.githubusercontent.com/bakrianoo/aravec/master/assets/query-1.jpg)
+***
+
+[Please view the results page](https://github.com/bakrianoo/aravec/queries) for more queries.
 
 
 ## Citation
@@ -26,96 +33,10 @@ By total tokens of more than 1,169,075,128 tokens.
 ***
 ***
 
-## Rapid Example
-
-1. Install gensim >= 3.4 and nltk >= 3.2 using either pip or conda
-2. extract the compressed model files [ e.g. Twittert-CBOW ] to a directory called `models`
-
-```python
-import gensim
-
-# Unigrams models
-t_model = gensim.models.Word2Vec.load('models/full_uni_cbow_100_twitter.mdl')
-word_vector = t_model.wv[ 'تونس' ]
-
-# Ngrams models [when you have a multiple words token]
-t_model = gensim.models.Word2Vec.load('models/full_grams_cbow_100_twitter.mdl')
-word_vector = t_model.wv[ 'السلام عليكم'.replace(' ','_') ] # you need to replace spaces with _ character
-
-# find most similar tokens
-token = 'ابو تريكه'.replace(' ','_')
-
-if token in t_model.wv:
-    most_similar = t_model.wv.most_similar( token, topn=10 )
-    for term, score in most_similar:
-        print(term, score)
-# OUTPUTs
-# تريكه 0.752911388874054
-# حسام_غالي 0.7516342401504517
-
-```
-
-For more detailed demo including the required clean function to preprocess the query tokens. Please go to the detiled answer [Here](https://github.com/bakrianoo/aravec#How-To-Use).
-
-
-## Download
-
-### N-Grams Models
-
-Let's take a look on what we can retieve from the n-grams models using some most similar queries. 
-
-![alt text](https://raw.githubusercontent.com/bakrianoo/aravec/master/assets/query-1.jpg)
-***
-![alt text](https://raw.githubusercontent.com/bakrianoo/aravec/master/assets/query-2.jpg)
-***
-![alt text](https://raw.githubusercontent.com/bakrianoo/aravec/master/assets/query-3.jpg)
-***
-![alt text](https://raw.githubusercontent.com/bakrianoo/aravec/master/assets/query-4.jpg)
-***
-![alt text](https://raw.githubusercontent.com/bakrianoo/aravec/master/assets/query-5.jpg)
-***
-![alt text](https://raw.githubusercontent.com/bakrianoo/aravec/master/assets/query-6.jpg)
-***
-
-***
-### N-Grams Models
-
-Model        	  | Docs No.             | Vocabularies No.    | Vec-Size		| Download      |
------        	  | --------             | ----------          | ---------	    | --------- 	|
-Twitter-CBOW          | 66,900,000           | 1,476,715 | **300**	        | [Download](https://archive.org/download/full_grams_cbow_300_twitter/full_grams_cbow_300_twitter.zip) |
-Twitter-CBOW          | 66,900,000           | 1,476,715 | **100**	        | [Download](https://archive.org/download/full_grams_cbow_300_twitter/full_grams_cbow_100_twitter.zip) |
-Twitter-SkipGram          | 66,900,000           | 1,476,715 | **300**	        | [Download](https://archive.org/download/full_grams_cbow_300_twitter/full_grams_sg_300_twitter.zip) |
-Twitter-SkipGram          | 66,900,000           | 1,476,715 | **100**	        | [Download](https://archive.org/download/full_grams_cbow_300_twitter/full_grams_sg_100_twitter.zip) |
-Wikipedia-CBOW          | 1,800,000           | 662,109 | **300**	        | [Download](https://archive.org/download/aravec_3_wiki/full_grams_cbow_300_wiki.zip) |
-Wikipedia-CBOW          | 1,800,000           | 662,109 | **100**	        | [Download](https://archive.org/download/aravec_3_wiki/full_grams_cbow_100_wiki.zip) |
-Wikipedia-SkipGram          | 1,800,000           | 662,109 | **300**	        | [Download](https://archive.org/download/aravec_3_wiki/full_grams_sg_300_wiki.zip) |
-Wikipedia-SkipGram          | 1,800,000           | 662,109 | **100**	        | [Download](https://archive.org/download/aravec_3_wiki/full_grams_sg_100_wiki.zip) |
-
-***
-***
-
-
-### Unigrams Models
-
-Model        	  | Docs No.             | Vocabularies No.    | Vec-Size		| Download      |
------        	  | --------             | ----------          | ---------	    | --------- 	|
-Twitter-CBOW          | 66,900,000           | 1,259,756 | **300**	        | [Download](https://archive.org/download/full_grams_cbow_300_twitter/full_uni_cbow_300_twitter.zip) |
-Twitter-CBOW          | 66,900,000           | 1,259,756 | **100**	        | [Download](https://archive.org/download/full_grams_cbow_300_twitter/full_uni_cbow_100_twitter.zip) |
-Twitter-SkipGram          | 66,900,000           | 1,259,756 | **300**	        | [Download](https://archive.org/download/full_grams_cbow_300_twitter/full_uni_sg_300_twitter.zip) |
-Twitter-SkipGram          | 66,900,000           | 1,259,756 | **100**	        | [Download](https://archive.org/download/full_grams_cbow_300_twitter/full_uni_sg_100_twitter.zip) |
-Wikipedia-CBOW          | 1,800,000           | 320,636 | **300**	        | [Download](https://archive.org/download/aravec_3_wiki/full_uni_cbow_300_wiki.zip) |
-Wikipedia-CBOW          | 1,800,000           | 320,636 | **100**	        | [Download](https://archive.org/download/aravec_3_wiki/full_uni_cbow_100_wiki.zip) |
-Wikipedia-SkipGram          | 1,800,000           | 320,636 | **300**	        | [Download](https://archive.org/download/aravec_3_wiki/full_uni_sg_300_wiki.zip) |
-Wikipedia-SkipGram          | 1,800,000           | 320,636 | **100**	        | [Download](https://archive.org/download/aravec_3_wiki/full_uni_sg_100_wiki.zip) |
-
-***
-***
-
-
 ## How To Use
 These models were built using [gensim](https://radimrehurek.com/gensim/models/word2vec.html) Python library. Here's a simple code for loading and using
 one of the models by following these steps:
-1. Install `gensim` >= **3.4** and nltk >= **3.2** using either `pip` or `conda`
+1. Install `gensim` >= **3.4** and `nltk` >= **3.2** using either `pip` or `conda`
 
 >> pip install gensim nltk
 
@@ -137,83 +58,7 @@ import re
 import numpy as np
 from nltk import ngrams
 
-# =========================
-# ==== Helper Methods =====
-
-# Clean/Normalize Arabic Text
-def clean_str(text):
-    search = ["أ","إ","آ","ة","_","-","/",".","،"," و "," يا ",'"',"ـ","'","ى","\\",'\n', '\t','&quot;','?','؟','!']
-    replace = ["ا","ا","ا","ه"," "," ","","",""," و"," يا","","","","ي","",' ', ' ',' ',' ? ',' ؟ ',' ! ']
-    
-    #remove tashkeel
-    p_tashkeel = re.compile(r'[\u0617-\u061A\u064B-\u0652]')
-    text = re.sub(p_tashkeel,"", text)
-    
-    #remove longation
-    p_longation = re.compile(r'(.)\1+')
-    subst = r"\1\1"
-    text = re.sub(p_longation, subst, text)
-    
-    text = text.replace('وو', 'و')
-    text = text.replace('يي', 'ي')
-    text = text.replace('اا', 'ا')
-    
-    for i in range(0, len(search)):
-        text = text.replace(search[i], replace[i])
-    
-    #trim    
-    text = text.strip()
-
-    return text
-
-def get_vec(n_model,dim, token):
-    vec = np.zeros(dim)
-    is_vec = False
-    if token not in n_model.wv:
-        _count = 0
-        is_vec = True
-        for w in token.split("_"):
-            if w in n_model.wv:
-                _count += 1
-                vec += n_model.wv[w]
-        if _count > 0:
-            vec = vec / _count
-    else:
-        vec = n_model.wv[token]
-    return vec
-
-def calc_vec(pos_tokens, neg_tokens, n_model, dim):
-    vec = np.zeros(dim)
-    for p in pos_tokens:
-        vec += get_vec(n_model,dim,p)
-    for n in neg_tokens:
-        vec -= get_vec(n_model,dim,n)
-    
-    return vec   
-
-## -- Retrieve all ngrams for a text in between a specific range
-def get_all_ngrams(text, nrange=3):
-    text = re.sub(r'[\,\.\;\(\)\[\]\_\+\#\@\!\?\؟\^]', ' ', text)
-    tokens = [token for token in text.split(" ") if token.strip() != ""]
-    ngs = []
-    for n in range(2,nrange+1):
-        ngs += [ng for ng in ngrams(tokens, n)]
-    return ["_".join(ng) for ng in ngs if len(ng)>0 ]
-
-## -- Retrieve all ngrams for a text in a specific n
-def get_ngrams(text, n=2):
-    text = re.sub(r'[\,\.\;\(\)\[\]\_\+\#\@\!\?\؟\^]', ' ', text)
-    tokens = [token for token in text.split(" ") if token.strip() != ""]
-    ngs = [ng for ng in ngrams(tokens, n)]
-    return ["_".join(ng) for ng in ngs if len(ng)>0 ]
-
-## -- filter the existed tokens in a specific model
-def get_existed_tokens(tokens, n_model):
-    return [tok for tok in tokens if tok in n_model.wv ]
-
-
-
-
+from utilities import * # import utilities.py module
 
 # ============================   
 # ====== N-Grams Models ======
@@ -290,6 +135,45 @@ for term, score in most_similar:
 word_vector = t_model.wv[ token ]
 
 ```
+
+## Download
+
+### N-Grams Models
+
+to take a look on what we can retieve from the n-grams models using some most similar queries. [Please view the results page](https://github.com/bakrianoo/aravec/queries)
+
+
+### N-Grams Models
+
+Model        	  | Docs No.             | Vocabularies No.    | Vec-Size		| Download      |
+-----        	  | --------             | ----------          | ---------	    | --------- 	|
+Twitter-CBOW          | 66,900,000           | 1,476,715 | **300**	        | [Download](https://bakrianoo.sfo2.digitaloceanspaces.com/aravec/full_grams_cbow_300_twitter.zip) |
+Twitter-CBOW          | 66,900,000           | 1,476,715 | **100**	        | [Download](https://bakrianoo.sfo2.digitaloceanspaces.com/aravec/full_grams_cbow_100_twitter.zip) |
+Twitter-SkipGram          | 66,900,000           | 1,476,715 | **300**	        | [Download](https://bakrianoo.sfo2.digitaloceanspaces.com/aravec/full_grams_sg_300_twitter.zip) |
+Twitter-SkipGram          | 66,900,000           | 1,476,715 | **100**	        | [Download](https://bakrianoo.sfo2.digitaloceanspaces.com/aravec/full_grams_sg_100_twitter.zip) |
+Wikipedia-CBOW          | 1,800,000           | 662,109 | **300**	        | [Download](https://bakrianoo.sfo2.digitaloceanspaces.com/aravec/full_grams_cbow_300_wiki.zip) |
+Wikipedia-CBOW          | 1,800,000           | 662,109 | **100**	        | [Download](https://bakrianoo.sfo2.digitaloceanspaces.com/aravec/full_grams_cbow_100_wiki.zip) |
+Wikipedia-SkipGram          | 1,800,000           | 662,109 | **300**	        | [Download](https://bakrianoo.sfo2.digitaloceanspaces.com/aravec/full_grams_sg_300_wiki.zip) |
+Wikipedia-SkipGram          | 1,800,000           | 662,109 | **100**	        | [Download](https://bakrianoo.sfo2.digitaloceanspaces.com/aravec/full_grams_sg_100_wiki.zip) |
+
+***
+***
+
+### Unigrams Models
+
+Model        	  | Docs No.             | Vocabularies No.    | Vec-Size		| Download      |
+-----        	  | --------             | ----------          | ---------	    | --------- 	|
+Twitter-CBOW          | 66,900,000           | 1,259,756 | **300**	        | [Download](https://bakrianoo.sfo2.digitaloceanspaces.com/aravec/full_uni_cbow_300_twitter.zip) |
+Twitter-CBOW          | 66,900,000           | 1,259,756 | **100**	        | [Download](https://bakrianoo.sfo2.digitaloceanspaces.com/aravec/full_uni_cbow_100_twitter.zip) |
+Twitter-SkipGram          | 66,900,000           | 1,259,756 | **300**	        | [Download](https://bakrianoo.sfo2.digitaloceanspaces.com/aravec/full_uni_sg_300_twitter.zip) |
+Twitter-SkipGram          | 66,900,000           | 1,259,756 | **100**	        | [Download](https://bakrianoo.sfo2.digitaloceanspaces.com/aravec/full_uni_sg_100_twitter.zip) |
+Wikipedia-CBOW          | 1,800,000           | 320,636 | **300**	        | [Download](https://bakrianoo.sfo2.digitaloceanspaces.com/aravec/full_uni_cbow_300_wiki.zip) |
+Wikipedia-CBOW          | 1,800,000           | 320,636 | **100**	        | [Download](https://bakrianoo.sfo2.digitaloceanspaces.com/aravec/full_uni_cbow_100_wiki.zip) |
+Wikipedia-SkipGram          | 1,800,000           | 320,636 | **300**	        | [Download](https://bakrianoo.sfo2.digitaloceanspaces.com/aravec/full_uni_sg_300_wiki.zip) |
+Wikipedia-SkipGram          | 1,800,000           | 320,636 | **100**	        | [Download](https://bakrianoo.sfo2.digitaloceanspaces.com/aravec/full_uni_sg_100_wiki.zip) |
+
+***
+***
 
 ## Citation
 `Abu Bakr Soliman, Kareem Eisa, and Samhaa R. El-Beltagy, “AraVec: A set of Arabic Word Embedding Models for use in Arabic NLP”, in proceedings of the 3rd International Conference on Arabic Computational Linguistics (ACLing 2017), Dubai, UAE, 2017.`
