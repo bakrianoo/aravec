@@ -48,6 +48,9 @@ one of the models by following these steps:
 
 ![alt text](https://raw.githubusercontent.com/bakrianoo/aravec/master/assets/how.jpg)
 
+## How to integrate AraVec with [Spacy.io][https://spacy.io]
+[NoteBook Codes](https://github.com/bakrianoo/aravec/blob/master/aravec-with-spacy.ipynb)
+
 ## Code Samples
 
 ```python
