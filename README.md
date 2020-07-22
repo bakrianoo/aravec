@@ -22,7 +22,7 @@ Take a look on how ngrams models are represented:
 ![alt text](https://raw.githubusercontent.com/bakrianoo/aravec/master/assets/query-1.jpg)
 ***
 
-[Please view the results page](https://github.com/bakrianoo/aravec/queries) for more queries.
+[Please view the results page](https://github.com/bakrianoo/aravec/tree/master/queries) for more queries.
 
 
 ## Citation
