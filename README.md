@@ -150,14 +150,14 @@ to take a look on what we can retieve from the n-grams models using some most si
 
 Model        	  | Docs No.             | Vocabularies No.    | Vec-Size		| Download      |
 -----        	  | --------             | ----------          | ---------	    | --------- 	|
-Twitter-CBOW          | 66,900,000           | 1,476,715 | **300**	        | [Download](https://bakrianoo.s3-us-west-2.amazonaws.com/aravec/full_grams_cbow_300_twitter.zip) |
-Twitter-CBOW          | 66,900,000           | 1,476,715 | **100**	        | [Download](https://bakrianoo.s3-us-west-2.amazonaws.com/aravec/full_grams_cbow_100_twitter.zip) |
-Twitter-SkipGram          | 66,900,000           | 1,476,715 | **300**	        | [Download](https://bakrianoo.s3-us-west-2.amazonaws.com/aravec/full_grams_sg_300_twitter.zip) |
-Twitter-SkipGram          | 66,900,000           | 1,476,715 | **100**	        | [Download](https://bakrianoo.s3-us-west-2.amazonaws.com/aravec/full_grams_sg_100_twitter.zip) |
-Wikipedia-CBOW          | 1,800,000           | 662,109 | **300**	        | [Download](https://bakrianoo.s3-us-west-2.amazonaws.com/aravec/full_grams_cbow_300_wiki.zip) |
-Wikipedia-CBOW          | 1,800,000           | 662,109 | **100**	        | [Download](https://bakrianoo.s3-us-west-2.amazonaws.com/aravec/full_grams_cbow_100_wiki.zip) |
-Wikipedia-SkipGram          | 1,800,000           | 662,109 | **300**	        | [Download](https://bakrianoo.s3-us-west-2.amazonaws.com/aravec/full_grams_sg_300_wiki.zip) |
-Wikipedia-SkipGram          | 1,800,000           | 662,109 | **100**	        | [Download](https://bakrianoo.s3-us-west-2.amazonaws.com/aravec/full_grams_sg_100_wiki.zip) |
+Twitter-CBOW          | 66,900,000           | 1,476,715 | **300**	        | [Download](https://bakrianoo.ewr1.vultrobjects.com/aravec/full_grams_cbow_300_twitter.zip) |
+Twitter-CBOW          | 66,900,000           | 1,476,715 | **100**	        | [Download](https://bakrianoo.ewr1.vultrobjects.com/aravec/full_grams_cbow_100_twitter.zip) |
+Twitter-SkipGram          | 66,900,000           | 1,476,715 | **300**	        | [Download](https://bakrianoo.ewr1.vultrobjects.com/aravec/full_grams_sg_300_twitter.zip) |
+Twitter-SkipGram          | 66,900,000           | 1,476,715 | **100**	        | [Download](https://bakrianoo.ewr1.vultrobjects.com/aravec/full_grams_sg_100_twitter.zip) |
+Wikipedia-CBOW          | 1,800,000           | 662,109 | **300**	        | [Download](https://bakrianoo.ewr1.vultrobjects.com/aravec/full_grams_cbow_300_wiki.zip) |
+Wikipedia-CBOW          | 1,800,000           | 662,109 | **100**	        | [Download](https://bakrianoo.ewr1.vultrobjects.com/aravec/full_grams_cbow_100_wiki.zip) |
+Wikipedia-SkipGram          | 1,800,000           | 662,109 | **300**	        | [Download](https://bakrianoo.ewr1.vultrobjects.com/aravec/full_grams_sg_300_wiki.zip) |
+Wikipedia-SkipGram          | 1,800,000           | 662,109 | **100**	        | [Download](https://bakrianoo.ewr1.vultrobjects.com/aravec/full_grams_sg_100_wiki.zip) |
 
 ***
 ***
@@ -166,14 +166,14 @@ Wikipedia-SkipGram          | 1,800,000           | 662,109 | **100**	        | 
 
 Model        	  | Docs No.             | Vocabularies No.    | Vec-Size		| Download      |
 -----        	  | --------             | ----------          | ---------	    | --------- 	|
-Twitter-CBOW          | 66,900,000           | 1,259,756 | **300**	        | [Download](https://bakrianoo.s3-us-west-2.amazonaws.com/aravec/full_uni_cbow_300_twitter.zip) |
-Twitter-CBOW          | 66,900,000           | 1,259,756 | **100**	        | [Download](https://bakrianoo.s3-us-west-2.amazonaws.com/aravec/full_uni_cbow_100_twitter.zip) |
-Twitter-SkipGram          | 66,900,000           | 1,259,756 | **300**	        | [Download](https://bakrianoo.s3-us-west-2.amazonaws.com/aravec/full_uni_sg_300_twitter.zip) |
-Twitter-SkipGram          | 66,900,000           | 1,259,756 | **100**	        | [Download](https://bakrianoo.s3-us-west-2.amazonaws.com/aravec/full_uni_sg_100_twitter.zip) |
-Wikipedia-CBOW          | 1,800,000           | 320,636 | **300**	        | [Download](https://bakrianoo.s3-us-west-2.amazonaws.com/aravec/full_uni_cbow_300_wiki.zip) |
-Wikipedia-CBOW          | 1,800,000           | 320,636 | **100**	        | [Download](https://bakrianoo.s3-us-west-2.amazonaws.com/aravec/full_uni_cbow_100_wiki.zip) |
-Wikipedia-SkipGram          | 1,800,000           | 320,636 | **300**	        | [Download](https://bakrianoo.s3-us-west-2.amazonaws.com/aravec/full_uni_sg_300_wiki.zip) |
-Wikipedia-SkipGram          | 1,800,000           | 320,636 | **100**	        | [Download](https://bakrianoo.s3-us-west-2.amazonaws.com/aravec/full_uni_sg_100_wiki.zip) |
+Twitter-CBOW          | 66,900,000           | 1,259,756 | **300**	        | [Download](https://bakrianoo.ewr1.vultrobjects.com/aravec/full_uni_cbow_300_twitter.zip) |
+Twitter-CBOW          | 66,900,000           | 1,259,756 | **100**	        | [Download](https://bakrianoo.ewr1.vultrobjects.com/aravec/full_uni_cbow_100_twitter.zip) |
+Twitter-SkipGram          | 66,900,000           | 1,259,756 | **300**	        | [Download](https://bakrianoo.ewr1.vultrobjects.com/aravec/full_uni_sg_300_twitter.zip) |
+Twitter-SkipGram          | 66,900,000           | 1,259,756 | **100**	        | [Download](https://bakrianoo.ewr1.vultrobjects.com/aravec/full_uni_sg_100_twitter.zip) |
+Wikipedia-CBOW          | 1,800,000           | 320,636 | **300**	        | [Download](https://bakrianoo.ewr1.vultrobjects.com/aravec/full_uni_cbow_300_wiki.zip) |
+Wikipedia-CBOW          | 1,800,000           | 320,636 | **100**	        | [Download](https://bakrianoo.ewr1.vultrobjects.com/aravec/full_uni_cbow_100_wiki.zip) |
+Wikipedia-SkipGram          | 1,800,000           | 320,636 | **300**	        | [Download](https://bakrianoo.ewr1.vultrobjects.com/aravec/full_uni_sg_300_wiki.zip) |
+Wikipedia-SkipGram          | 1,800,000           | 320,636 | **100**	        | [Download](https://bakrianoo.ewr1.vultrobjects.com/aravec/full_uni_sg_100_wiki.zip) |
 
 ***
 ***
